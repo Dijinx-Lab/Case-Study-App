@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:case_study_app/constants/pref_keys.dart';
 import 'package:case_study_app/models/api/team/team.dart';
+import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PrefUtil {
@@ -34,6 +35,8 @@ class PrefUtil {
         final String teamJson = json.encode(value.toJson());
         _sharedPreferences!.setString(team, teamJson);
       }
-    } catch (e) {}
+    } catch (e) {
+      debugPrint(e.toString());
+    }
   }
 }

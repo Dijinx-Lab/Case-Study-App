@@ -1,0 +1,30 @@
+{
+    "@@locale": "en",
+
+    "joinTeam": "Join Team",
+    "joinATeam": "Join a team",
+    "enterCodeToJoinTeam": "Enter code to join a team",
+    "wrongCode": "Code \"{code}\" is invalid",
+    "continueText": "Continue",
+    "@join_team": {
+        "description": "Button text to join a team"
+    },
+    "@join_a_team": {
+        "description": "Prompt to join a team"
+    },
+    "@enter_code_to_join_team": {
+        "description": "Instruction to enter a code to join a team"
+    },
+    "@wrong_code": {
+        "description": "Error message for wrong code",
+        "placeholders": {
+            "code": {
+                "type": "String",
+                "example": "12345"
+            }
+        }
+    },
+    "@continueText": {
+        "description": "Continue button text"
+    }
+}

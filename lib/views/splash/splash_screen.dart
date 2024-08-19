@@ -17,7 +17,7 @@ class SplashScreen extends StatelessWidget {
           }
         },
         builder: (context, state) {
-          return Center(child: Text('splash'));
+          return const Center(child: Text('splash'));
         },
       ),
     );
