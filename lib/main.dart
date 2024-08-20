@@ -3,7 +3,7 @@ import 'package:case_study_app/cubits/language/language_cubit.dart';
 import 'package:case_study_app/cubits/splash/splash_cubit.dart';
 import 'package:case_study_app/cubits/team/team_cubit.dart';
 import 'package:case_study_app/routes/navigator_routes.dart';
-import 'package:case_study_app/services/pref_service.dart';
+import 'package:case_study_app/services/shared_preferences/pref_service.dart';
 import 'package:case_study_app/style/color/color_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

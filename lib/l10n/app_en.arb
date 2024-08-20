@@ -26,5 +26,18 @@
     },
     "@continueText": {
         "description": "Continue button text"
+    },
+
+    "noInternetConnection": "No internet connection",
+    "@noInternetConnection": {
+        "description": "Message displayed when there is no internet connection"
+    },
+    "sessionExpired": "Session expired",
+    "@sessionExpired": {
+        "description": "Message displayed when the session has expired"
+    },
+    "requestFailed": "Request failed, please try again later",
+    "@requestFailed": {
+        "description": "Message displayed when a request fails"
     }
 }

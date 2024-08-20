@@ -62,6 +62,8 @@ class _TeamCodeScreenState extends State<TeamCodeScreen> {
                   errorState = true;
                 } else if (state is TeamUninitialized) {
                   errorState = false;
+                } else if (state is TeamInitialized) {
+                  errorState = false;
                 }
               },
               builder: (context, state) {

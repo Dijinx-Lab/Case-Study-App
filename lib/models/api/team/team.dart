@@ -1,39 +1,37 @@
 class Team {
-  final String? id;
+  final int? id;
   final String? name;
-  final String? teamCode;
-  final int? score;
-  final String? activeChallenge;
-  final List<dynamic>? completedChallenges;
+  final String? code;
+  final DateTime? createdOn;
+  final dynamic updatedOn;
+  final dynamic deletedOn;
 
   Team({
     this.id,
     this.name,
-    this.teamCode,
-    this.score,
-    this.activeChallenge,
-    this.completedChallenges,
+    this.code,
+    this.createdOn,
+    this.updatedOn,
+    this.deletedOn,
   });
 
   factory Team.fromJson(Map<String, dynamic> json) => Team(
-        id: json["_id"],
+        id: json["id"],
         name: json["name"],
-        teamCode: json["team_code"],
-        score: json["score"],
-        activeChallenge: json["active_challenge"],
-        completedChallenges: json["completed_challenges"] == null
-            ? []
-            : List<dynamic>.from(json["completed_challenges"]!.map((x) => x)),
+        code: json["code"],
+        createdOn: json["createdOn"] == null
+            ? null
+            : DateTime.parse(json["createdOn"]),
+        updatedOn: json["updatedOn"],
+        deletedOn: json["deletedOn"],
       );
 
   Map<String, dynamic> toJson() => {
-        "_id": id,
+        "id": id,
         "name": name,
-        "team_code": teamCode,
-        "score": score,
-        "active_challenge": activeChallenge,
-        "completed_challenges": completedChallenges == null
-            ? []
-            : List<dynamic>.from(completedChallenges!.map((x) => x)),
+        "code": code,
+        "createdOn": createdOn?.toIso8601String(),
+        "updatedOn": updatedOn,
+        "deletedOn": deletedOn,
       };
 }

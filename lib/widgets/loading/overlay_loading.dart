@@ -1,6 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'package:case_study_app/utility/loading_util.dart';
+import 'package:case_study_app/utility/loading/loading_util.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
